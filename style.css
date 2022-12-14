@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body,
+html {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+	display: flex;
+	height: 100vh;
+	overflow: hidden;
+	width: 100vw;
+	justify-content: center;
+	align-items: flex-start;
+	margin-top: 20vh;
+	background-color: #f1f1f1;
+}
+.search-wrapper {
+	border: 1px solid #e3e3e3;
+	border-radius: 10px;
+	padding: 0.4rem 0;
+	background-color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: black;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+	position: relative;
+}
+.search-wrapper ul {
+	position: absolute;
+	top: 100%;
+	background-color: #ffffff;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+	width: 100%;
+}
+.search-wrapper.hasResults {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.search-wrapper i {
+	line-height: 100%;
+	padding: 0 0.6rem;
+	font-size: 18px;
+	font-weight: 700;
+	color: #393939;
+}
+
+.search-wrapper input {
+	width: 30vw;
+	padding: 6px 5px;
+	border: none;
+	font-size: 18px;
+	outline: none;
+}
+
+#clear-icon {
+	color: #ffffff;
+	cursor: pointer;
+}
+
+#clear-icon.searching {
+	color: #393939;
+}
+.search-wrapper ul {
+	padding: 0;
+	padding-top: 0.7rem;
+	padding-bottom: 0.7rem;
+	list-style-type: none;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	display: none;
+	color: #d3d3d3;
+	border-top: 1px solid #e3e3e3;
+}
+.search-wrapper ul li {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	font-weight: 400;
+	padding-left: 0.7rem;
+	padding-right: 0.7rem;
+	width: 100%;
+}
+.search-wrapper ul li:hover {
+	cursor: pointer;
+	background-color: #fbfbfb;
+}
+.search-wrapper ul hr {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	height: 1px;
+	background: #e3e3e3;
+}
+.search-wrapper ul h4 {
+	padding-left: 0.7rem;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+.search-wrapper ul li span {
+	color: #272727;
+	font-weight: 600;
+}
+.search-wrapper.hasResults ul {
+	display: flex;
+	flex-direction: column;
+}
+.headingWrapper {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 3px;
+}
+.typeCount {
+	background-color: #cecece;
+	color: #393939;
+	font-weight: 600;
+	height: 0.9rem;
+	width: 0.9rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 3px;
+	margin-left: 0.5rem;
+	line-height: 1rem;
+	font-size: 12px;
+	text-align: center;
+}
